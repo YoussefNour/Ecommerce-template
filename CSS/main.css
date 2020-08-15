@@ -46,6 +46,19 @@ footer{
     padding-top: 20px;
 }
 
+.loginRegForm{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    border-style: groove;
+    border-color: crimson;
+    border-radius: 5px;
+    padding-top: 20px; 
+}
+
 label{
     font-size: 20px;
     margin: 5px 0px 5px 0px;
@@ -85,9 +98,18 @@ input[type="reset"]{
     border: none;
     margin-top: 20px;
     margin-bottom: -20px;
-    color: aliceblue;
-    
+    color: aliceblue;  
 }
+
+input[type="button"]{
+    width: 100%;
+    height: 30px;
+    background-color: crimson;
+    border: none;
+    margin-top: 20px;
+    color: aliceblue; 
+}
+
 .navAnchors{
     color: aliceblue;
     text-decoration: none;
