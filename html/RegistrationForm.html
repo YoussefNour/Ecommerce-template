@@ -36,44 +36,65 @@
             </table>
         </nav>
         <div class="registerdiv">
-            <section class="registerForm">
-                <form action="index.html" method="POST">
-                    <label for="fullname">Full Name</label>
-                    <input type="text" required name="fullname">
-                    <br>
-                    <label for="username">User Name</label>
-                    <input type="text" required name="Username">
-                    <br>
-                    <label for="password">password</label>
-                    <input type="password" required name="password">
-                    <br>
-                    <label for="email">email</label>
-                    <input type="email" required name="email">
-                    <br>
-                    <label>gender</label>
-                    <label for="male">male</label>
-                    <input id="male" type="radio" name="gender" value="male">
-                    <label for="female">female</label>
-                    <input id="female" type="radio" name="gender" value="female">
-                    <br>
-                    <label for="country">Country</label>
-                    <input type="text" required name="country">
-                    <br>
-                    <label for="hobies">hobies</label>
-                    <textarea name="hobbies"></textarea>
-                    <br>
-                    <label for="notes">notes</label>
-                    <textarea name="notes"></textarea>
-                    
-                    <br>
-                    <label for="CV">CV</label>
-                    <input name="CV" type="file" accept=".pdf">
+            <form action="index.html" method="POST" class="registerForm">
+                <div style="display: flex; flex-direction: row; margin: 20px;">
+                    <div class="subdiv" >
+                        <label>Fullname</label>
+                        <label>Username</label>
+                        <label>Password</label>
+                        <label>Email</label>
+                        <br>
+                        <label for="gender">gender</label>
+                        <label for="male">male</label>
+                        <label for="female">female</label>
+                        <label for="country">Country</label>
+                        <label for="hobbies">Hobbies:</label>
+                        <label>Skying</label>
+                        <label>Swimming</label>
+                        <label>Running</label>
+                        <label>Notes:</label>
+                        <br><br>
+                        <label for="Avatar">Avatar:</label>
+                    </div>
+    
+                    <div class="subdiv">
+                        <input  type="text" required name="fullname" placeholder="Fullname">
+    
+                        <input type="text" required name="Username" placeholder="Username">
+                        
+                        <input type="password" required name="password" placeholder="password">
+    
+                        <input type="email" required name="email" placeholder="email">
+                        <br><br>
+                        <input id="male" type="radio" name="gender" value="male">
+                        <input id="female" type="radio" name="gender" value="female">
 
-                    <input type="reset" value="reset">
-                    <input type="submit" value="Register">
-                </form>
-            </section>
+                        <select name="country">
+                            <option value="Egypt">Egypt</option>
+                            <option value="UAE">UAE</option>
+                            <option value="KSA">KSA</option>
+                            <option value="Bahrain">Bahrain</option>
+                        </select>
+                        <br><br>
+                        <input name="Skying" type="checkbox" value="Skying">
+    
+                        <input name="Swimming" type="checkbox" value="Swimming">
+    
+                        <input name="hobbies" type="checkbox" value="Running">
+                        <br>
+                        <textarea  rows="3" cols="30" name="notes" placeholder="notes"></textarea>
+    
+                        <input name="Avatar" type="file" accept=".jpeg,.png,.jpg">
+                    
+                    </div>
+                    
+                </div>
+                <input type="reset" value="reset">
+                <input type="submit" value="Register">
+            </form>
+            
         </div>
+
         <footer>
             <p>
                 one of Joes Inc. Websites

@@ -17,12 +17,26 @@ body{
     margin: 5px 10px 5px 10px;
     padding: 5px 10px 5px 10px;
 }
+
 .registerdiv{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 110vh;
 }
+
+.registerForm{
+    align-items: center;
+    border-style: groove;
+    border-color: crimson;
+    border-radius: 5px;
+}
+
+.subdiv{
+    display: flex;
+    flex-direction: column;
+}
+
 footer{
     color: aliceblue;
     display: flex;
@@ -34,38 +48,15 @@ footer{
     height: 200px;
     margin-top: 50px
 }
-.registerForm{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: x-large;
-    border-style: groove;
-    border-color: crimson;
-    border-radius: 5px;
-    padding-top: 20px;
-}
 
 label{
-    font-size: 20px;
-    margin: 5px 0px 5px 0px;
+    font-size: 15px;
+    margin: 3px;
 }
 
-input[type="text"]{
-    margin: 8px 20px 8px 20px;
-}
-
-input[type="password"]{
-    margin: 8px 20px 8px 20px;
-}
-
-input[type="email"]{
-    margin: 8px 20px 8px 20px;
-}
-
-input[type="radio"]{
-    margin: 5px 5px 5px 5px;
-    color: crimson;
+input{
+    font-size: 12px;
+    margin: 5px;
 }
 
 input[type="submit"]{
@@ -74,7 +65,7 @@ input[type="submit"]{
     background-color: crimson;
     border: none;
     color: aliceblue;
-    margin-top: -20px;
+    margin: -20px 0px 0px 0px;
     padding-top: 0px;
 }
 
@@ -83,8 +74,7 @@ input[type="reset"]{
     height: 30px;
     background-color: crimson;
     border: none;
-    margin-top: 20px;
-    margin-bottom: -20px;
+    margin: 10px 0px -20px 0px;
     color: aliceblue;
     
 }
@@ -118,6 +108,10 @@ input[type="reset"]{
 
 #mainli :hover{
     color: black;
+}
+
+textarea {
+    resize: none;
 }
 
 /* Slider */
