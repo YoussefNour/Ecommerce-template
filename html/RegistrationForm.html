@@ -15,85 +15,57 @@
     
     <body>
         <nav class="mainNav">
-            <table class="navtable">
-                <tr class="trNav">
-                    <td class="tdNav">
-                        <a class="navAnchors" href="index.html"><img width="40px" src="/Images/retail-computer-icons-e-commerce-sales-mega-offer-removebg-preview.png" alt="Logo"></a>
-                    </td>
-                    <td class="tdNav">
-                        <a class="navAnchors" href="index.html">TraderJoes</a>
-                    </td>
-                    <td class="tdNav">
-                        <a class="navAnchors" href="index.html">Home</a>
-                    </td>
-                    <td class="tdNav">
-                        <a class="navAnchors" href="RegistrationForm.html">Register</a>
-                    </td>
-                    <td class="tdNav">
-                        <a class="navAnchors" href="LoginForm.html">Login</a>
-                    </td>
-                </tr>
-            </table>
+            <a class="navAnchors" href="index.html"><img width="40px" src="/Images/retail-computer-icons-e-commerce-sales-mega-offer-removebg-preview.png" alt="Logo"></a>
+            <a class="navAnchors" href="index.html">TraderJoes</a>
+            <a class="navAnchors" href="index.html">Home</a>
+            <a class="navAnchors" href="RegistrationForm.html">Register</a>
+            <a class="navAnchors" href="LoginForm.html">Login</a>
         </nav>
         <div class="registerdiv">
             <form action="index.html" method="POST" class="registerForm">
-                <div style="display: flex; flex-direction: row; margin: 20px;">
-                    <div class="subdiv" >
-                        <label>Fullname</label>
-                        <label>Username</label>
-                        <label>Password</label>
-                        <label>Email</label>
-                        <br>
-                        <label for="gender">gender</label>
-                        <label for="male">male</label>
-                        <label for="female">female</label>
-                        <label for="country">Country</label>
-                        <br>
-                        <label for="hobbies">Hobbies:</label>
-                        <label>Skying</label>
-                        <label>Swimming</label>
-                        <label>Running</label>
-                        <label>Notes:</label>
-                        <br><br>
-                        <label for="Avatar">Avatar:</label>
-                    </div>
-    
-                    <div class="subdiv">
-                        <input  type="text" required name="fullname" placeholder="Fullname">
-    
-                        <input type="text" required name="Username" placeholder="Username">
-                        
-                        <input type="password" required name="password" placeholder="password">
-    
-                        <input type="email" required name="email" placeholder="email">
-                        <br><br>
-                        <input id="male" type="radio" name="gender" value="male">
-                        <input id="female" type="radio" name="gender" value="female">
-
-                        <select name="country">
-                            <option value="Egypt">Egypt</option>
-                            <option value="UAE">UAE</option>
-                            <option value="KSA">KSA</option>
-                            <option value="Bahrain">Bahrain</option>
-                        </select>
-                        <br><br><br>
-                        <input name="Skying" type="checkbox" value="Skying">
-    
-                        <input name="Swimming" type="checkbox" value="Swimming">
-    
-                        <input name="hobbies" type="checkbox" value="Running">
-                        <br>
-                        <textarea  rows="3" cols="30" name="notes" placeholder="notes"></textarea>
-    
-                        <input name="Avatar" type="file" accept=".jpeg,.png,.jpg">
-                    
-                    </div>
-                    
+                <b><label>Registration</label></b>
+                <div class="subdivV">
+                <input  type="text" required name="fullname" placeholder="fullname">
+                <input type="text" required name="Username" placeholder="username">
+                <input type="password" required name="password" placeholder="password">
+                <input type="email" required name="email" placeholder="email">
+                <label>Gender</label>
+                <div class="subdivH">
+                    <label for="male">male</label>
+                    <input id="male" type="radio" name="gender" value="male">
                 </div>
-                <input type="reset" value="reset">
+                <div class="subdivH">
+                    <label for="female">female</label>
+                    <input id="female" type="radio" name="gender" value="female">
+                </div>
+                <label>country</label>
+                <select name="country">
+                    <option value="Egypt">Egypt</option>
+                    <option value="UAE">UAE</option>
+                    <option value="KSA">KSA</option>
+                    <option value="Bahrain">Bahrain</option>
+                </select>
+                <div class="subdivH">
+                    <label>skying</label>
+                    <input name="Skying" type="checkbox" value="Skying">
+                </div>
+                <div class="subdivH">
+                    <label>swimming</label>
+                    <input name="Swimming" type="checkbox" value="Swimming"> 
+                </div>
+                <div class="subdivH">
+                    <label>running</label>
+                    <input name="hobbies" type="checkbox" value="Running">
+                </div>
+                <textarea  rows="3" cols="30" name="notes" placeholder="notes"></textarea>
+                <div class="subdivH">
+                    <label>Upload Photo</label>
+                    <input name="Avatar" type="file" accept=".jpeg,.png,.jpg"> 
+                </div>
+                </div>
+                <input type="reset" value="Reset">
                 <input type="submit" value="Register">
             </form>
-            
         </div>
 
         <footer>

@@ -3,123 +3,103 @@ body{
     margin: 0;
     padding: 0;
 }
+/*Navigation Bar*/
 .mainNav {
     width: 100%;
     background-color: crimson;
-}
-.navtable{
-    vertical-align: middle;
-    text-align: center;
-    height: 80px;
-    font-size: 20px;
-}
-.tdNav{
-    margin: 5px 10px 5px 10px;
-    padding: 5px 10px 5px 10px;
-}
-
-.registerdiv{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 110vh;
+    flex-direction: row;
+    flex-shrink: inherit;
 }
+.navAnchors{
+    color: aliceblue;
+    text-decoration: none;
+    margin:5px;
+    align-self: center;
+    font-size: 22px;
+}
+@media screen and (max-width: 500px){
+    .navAnchors{
+        font-size: 15px;
+    }
+}
+/*----------------------*/
 
+/*Registration Form*/
+.registerdiv{
+    margin: auto;
+    width: fit-content;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
 .registerForm{
-    align-items: center;
     border-style: groove;
     border-color: crimson;
     border-radius: 5px;
-}
-
-.subdiv{
     display: flex;
     flex-direction: column;
 }
+.subdivV{
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+}
+.subdivH{
+    display: flex;
+    flex-direction: row;
+}
+label, input{
+    font-size: 15px;
+    margin: 5px;
+}
 
+input[type="reset"],[type="button"],[type="submit"]{
+    width: 100%;
+    height: 30px;
+    background-color: crimson;
+    border: none;
+    color: aliceblue;
+    font-size: 14px;
+    padding: 0px; 
+    margin: 0px;
+}
+textarea {
+    resize: none;
+}
+/*----------------------*/
 footer{
     color: aliceblue;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
     background-color: crimson;
-    height: 200px;
-    margin-top: 50px
+    height:200px;
+    padding-top: 50px;
 }
-
-.loginRegForm{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+/*---------LoginForm-------*/
+.Logindiv{
+    margin: auto;
+    width: max-content;
     justify-content: center;
-    align-items: center;
-    font-size: x-large;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.loginForm{
     border-style: groove;
     border-color: crimson;
     border-radius: 5px;
-    padding-top: 20px; 
+    display: flex;
+    flex-direction: column;
 }
-
-label{
-    font-size: 15px;
-    margin: 3px;
-}
-
-input{
-    font-size: 12px;
-    margin: 5px;
-}
-
-input[type="submit"]{
-    width: 100%;
-    height: 30px;
-    background-color: crimson;
-    border: none;
-    color: aliceblue;
-    margin: -20px 0px 0px 0px;
-    padding-top: 0px;
-}
-
-input[type="reset"]{
-    width: 100%;
-    height: 30px;
-    background-color: crimson;
-    border: none;
-    margin-top: 20px;
-    margin-bottom: -20px;
-    color: aliceblue;  
-}
-
-input[type="button"]{
-    width: 100%;
-    height: 30px;
-    background-color: crimson;
-    border: none;
-    margin-top: 20px;
-    color: aliceblue; 
-}
-
-.navAnchors{
-    color: aliceblue;
-    text-decoration: none;
-}
-
-.navAnchors:hover{
-    color: brown;
-}
-
-.sidenav{
-    background-color: crimson;
-    border-style: solid;
-    display: inline;
-}
-
+/*----------------------*/
+/*---categories-Bar---*/
 .categories{
+    display: inline;
     list-style: none;
     margin: -5px 0px -5px 0px;
 }
+
 .categories li{
     display: inline;
     margin: 0px 20px 0px 20px;
@@ -132,13 +112,44 @@ input[type="button"]{
 #mainli :hover{
     color: black;
 }
+/*----------------------*/
 
-textarea {
-    resize: none;
+/*------Product------*/
+.productdiv{
+    margin: 30px 120px 30px 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Slider */
+.productarticle{
+    border: 1px aliceblue inset;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color:crimson;
+    border-radius: 3%;
+    color: aliceblue;
+    margin: 10px 50px 20px 50px;
+}
 
+.productimage{
+    width: 150px;
+    border: 1px solid aliceblue;
+    border-radius: 10%;
+}
+
+.BuyButton{
+    background-color: aliceblue;
+    color: black;
+    border: 1px aliceblue solid;
+    margin-top: 10px;
+    font-size: 20px;
+}
+/*------------------------*/
+/*-------Slider-------*/
 .slider-holder
 {
     width: 800px;
@@ -205,38 +216,4 @@ textarea {
     border-radius: 5px;
     background-color: brown;
 }
-
-/* Product */
-.productdiv{
-    margin: 30px 120px 30px 120px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.productarticle{
-    border: 1px aliceblue inset;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color:crimson;
-    border-radius: 3%;
-    color: aliceblue;
-    margin: 10px 50px 20px 50px;
-}
-
-.productimage{
-    width: 150px;
-    border: 1px solid aliceblue;
-    border-radius: 10%;
-}
-
-.BuyButton{
-    background-color: aliceblue;
-    color: black;
-    border: 1px aliceblue solid;
-    margin-top: 10px;
-    font-size: 20px;
-}
+/*----------------------*/
