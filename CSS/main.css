@@ -82,7 +82,7 @@ footer{
     margin: auto;
     width: max-content;
     justify-content: center;
-    padding-top: 5%;
+    padding-top: 20%;
     padding-bottom: 5%;
 }
 .loginForm{
@@ -91,6 +91,9 @@ footer{
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+}
+.filler{
+    height: 200px;
 }
 /*----------------------*/
 /*---categories-Bar---*/
