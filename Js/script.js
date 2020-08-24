@@ -1,11 +1,7 @@
-var name;
-name = prompt("what's your name");
-if(name=="ahmed")
-{
-    alert("welcome "+name);
-    alert("your age is 20");
-}else{
-    var age;
-    age =prompt("what's your age");
-    alert("hello".concat(name)+" your age is ".concat(age));
+for(i =1;i<21;i++){
+    if(i%2==1){
+        document.write(`<p style="color: red;">${i} hello world</p>`);    
+    }else{
+        document.write(`<p>${i} hello world</p>`);
+    }
 }
