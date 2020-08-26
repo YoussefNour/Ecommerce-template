@@ -1,7 +1,8 @@
-for(i =1;i<21;i++){
-    if(i%2==1){
-        document.write(`<p style="color: red;">${i} hello world</p>`);    
-    }else{
+var start=0,end=10,incerment=1;
+start = parseInt(prompt("enter start"));
+end = parseInt(prompt("enter end"));
+incerment = parseInt(prompt("enter incerement"));
+
+for(i=start;i>end;i-=incerment){
         document.write(`<p>${i} hello world</p>`);
-    }
 }
