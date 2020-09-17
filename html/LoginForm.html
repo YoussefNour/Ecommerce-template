@@ -25,15 +25,15 @@
         <a class="navAnchors" href="LoginForm.html">Login</a>
     </nav>
     <div class="Logindiv">
-        <form class="loginForm">
+        <form action="/html/index.html" method="post" class="loginForm">
             <b><label style="font-size: 20px;">Login</label></b>
-            <input type="text" name="UserName" placeholder="Username" required>
-            <input type="password" name="password" placeholder="password" required>
+            <input id="usernamebox" type="text" name="UserName" placeholder="Username" required>
+            <input id="passwordbox" type="password" name="password" placeholder="password" required>
             <div class="subdivH">
                 <label>remember me</label>
                 <input type="checkbox" name="remember">
             </div>
-            <input type="button" value="Login"> 
+            <button id="loginbtn" class="loginbutton">Login</button> 
         </form>
     </div>
     <div class="filler">
@@ -47,5 +47,6 @@
             <img src="/Images/facebook-logo-circle-new.png" alt="FaceBook" width="50px">
         </a>
     </footer>
+    <script src="/Js/Login.js"></script>
 </body>
 </html>

@@ -45,25 +45,15 @@
             <hr>
         </div>
         <div class="slider-holder">
-            <span id="slider-image-1"></span>
-            <span id="slider-image-2"></span>
-            <span id="slider-image-3"></span>
-            <div class="image-holder">
-                <img src="/Images/img1.jpg" class="slider-image"/>
-                <img src="/Images/img2.jpg" class="slider-image"/>
-                <img src="/Images/img3.jpg" class="slider-image"/>
-            </div>
-            <div class="button-holder">
-                <a href="#slider-image-1" class="slider-change"></a>
-                <a href="#slider-image-2" class="slider-change"></a>
-                <a href="#slider-image-3" class="slider-change"></a>
-            </div>
+            <button class="slider-button" id="slider-button-left" onclick="slideleft();"></button>
+            <img class="slider-image" id="slider-image" src="/Images/1.jpg">
+            <button class="slider-button" id="slider-button-right" onclick="slideright();"></button>
         </div>
         <hr>
         <h2 style="margin: 20px 5px 5px 20px;">Trending</h2>
         <div class="productdiv">
             <article class="productarticle">
-                <img class="productimage" src="/Images/img1.jpg"/>
+                <img class="productimage" src="/Images/img1.jpg" alt="reload to view"/>
                 <label>Name</label>
                 <label>price</label>
                 <button class="BuyButton">buy</button>
@@ -127,5 +117,6 @@
                 <img src="/Images/facebook-logo-circle-new.png" alt="FaceBook" width="50px">
             </a>
         </footer>
+        <script src="/Js/Slider.js"></script>
     </body>
 </html>
